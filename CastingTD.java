@@ -12,9 +12,15 @@ public class CastingTD {
 		short mengShort = (short) mengInt;
 		byte mengByte = (byte) mengShort;
 
-		System.out.println(sum(10, 12));
-	}
-	public static int sum(int a, int b) {
-		return a + b;
+		/*
+		 * Number Overflow 
+		 * ketka long 1 T di convert ke byte yg cuma 
+		 * mentok 127, maka nanti nya si byte kena 
+		 * number overflow. ketka sudah mentok di 127 , 
+		 * byte bakal mundur lagi jadi -127 lalu di tambah 
+		 * terus tambah ( mentok = MUNDUR LAGI ) sampe 
+		 * hasil nya 1 T .
+		*/
+
 	}
 }
